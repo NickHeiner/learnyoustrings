@@ -17,14 +17,9 @@ function getRandomString() {
   return reduction(_.range(length).map(getRandomChar), '+');
 }
 
-function getRandomStrings() {
-  var strCount = getRandomInt(4, 10);
-  return _.range(strCount).map(getRandomString);
-}
-
 module.exports = function () {
   return {
-    args: getRandomStrings(),
+    args: [getRandomString()],
     stdin: null
   }
 }
