@@ -1,0 +1,46 @@
+Write a program that returns true if a string is a palindrome, and false otherwise.
+
+Example
+    $ node your-solution.js foobar
+    // prints out 'false'
+
+    $ node your-solution.js bbb
+    // prints out 'true'
+
+    $ node your-solution.js abba
+    // prints out 'true'
+
+    $ node your-solution.js amanaplanacanalpanama
+    // prints out 'true'
+
+----------------------------------------------------------------------
+HINTS:
+
+Strings are immutable.
+
+    var str = 'asdf';
+    str[0] = 'z'; // str === 'asdf'
+                  // because strings are immutable, any assignment into them is ignored.
+
+String.slice is a nice method for cutting up strings:
+
+    'abcd'.slice(1) === 'bcd'
+    'abcd'.slice(2) === 'cd'
+    'fff'.slice(9001) === ''
+
+If str[x] is the x-th character of str counting from the beginning of the string,
+then str[str.length - 1 - x] is the x-th character of str counting from the end of the string.
+
+    var str = 'fzobar',
+        x = 2;
+
+    str[x] // o
+    str[str.length - 1 - x] // b
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+----------------------------------------------------------------------

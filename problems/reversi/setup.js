@@ -3,7 +3,7 @@ var getRandomString = require('../../helpers/get-random-string');
 module.exports = function () {
 
   var str = getRandomString(),
-      args = [str, str.substring(0, 3)];
+      args = [str];
 
   return {
     args: args,
