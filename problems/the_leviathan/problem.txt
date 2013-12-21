@@ -1,0 +1,38 @@
+Write a program that determines the Levenshtein distance of two strings. Levenshtein distance is a measure of the
+number of edits it would take to get from one string to another. An 'edit' is a deletion, insertion, or replacement
+of a character.
+
+Examples:
+
+    distance(foo, boo) === 1, because you can replace the 'f' with the 'b'
+    distance(foo, food) === 1, because you can insert a 'd' at the end
+    distance(foo, wog) === 2, because you can replace 'f' with 'w' at the beginning, and 'o' with 'g' at the end
+
+(http://en.wikipedia.org/wiki/Levenshtein_distance)
+
+Levenshtein distance is used to do fuzzy matching. For instance, when you do a search for "dukc" and the search
+engine suggests that you could have meant "duck", it may be using fuzzy matching to find words similar to what you
+entered that have a much higher popularity than your original query.
+
+Example
+    $ node your-solution.js kitten sitting
+    // prints out '3'
+
+    $ node your-solution.js fog fog
+    // prints out '0'
+
+This is an order of magnitude more difficult than everything else we've done in this series, so don't feel bad if it
+doesn't come as easily as the others.
+
+----------------------------------------------------------------------
+HINTS:
+
+Copying pseudocode from wikipedia into whatever environment you're working in is an important CS academic life skill.
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+----------------------------------------------------------------------
