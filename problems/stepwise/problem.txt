@@ -1,0 +1,70 @@
+Previously, we found every other character of a string, but we were hardcoded to jumping by twos.
+Now, let's make that dynamic, and be able to jump along by any size step.
+
+Example
+    $ node your-solution.js abcde 1
+    // prints out 'abcde'
+
+    $ node your-solution.js abcde 2
+    // prints out 'ace'
+
+    $ node your-solution.js abcde 3
+    // prints out 'ad'
+
+    $ node your-solution.js abcdabcdabcd 4
+    // prints out 'aaaa'
+
+----------------------------------------------------------------------
+HINTS:
+
+process.argv is an array of strings. If you have a string that represents a number
+and you'd like to use it as such, use the Number() function:
+
+    // assuming that process.argv = ['node', 'your-solution.js', 'abcd', '3']
+
+    // danger!
+    var num = process.argv[3];
+    var sum = num + 5; // === '35', which I'm guessing is not what you want.
+                       // this happens because instead of coercing '3' into a number,
+                       // js converts 5 into a string. It then proceeds with string concatenation,
+                       // so '3' + '5' === '35', just like 'a' + 'b' === 'ab'
+
+    // better!
+    var num = Number(process.argv[3]);
+    var sum = num + 5; // === '8'
+
+To access a character of a string at an index, use the [] notation:
+
+    var index = 1;
+    'abc'[index] === 'b'
+
+For loops are a reasonable way of iterating over a range of numbers:
+
+    for (var x = 0; x < upperBound; x++) {
+        // do something
+    }
+
+You can control where the loop goes next with the third part of the for loop:
+
+    for (var x = 0; x > -100; x--) {
+        // going down by one each time
+    }
+
+    for (var x = 0; x < 100; x *= 2) {
+        // doubling x each time
+    }
+
+    for (var x = 0; x < 2300; x = x * x) {
+        // squaring x each time
+    }
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+
+This problem originally comes from the learnyounode workshop.
+
+----------------------------------------------------------------------

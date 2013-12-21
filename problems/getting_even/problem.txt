@@ -13,7 +13,7 @@ To access a character of a string at an index, use the [] notation:
     var index = 1;
     'abc'[index] === 'b'
 
-For loops a reasonable way of iterating over a range of numbers:
+For loops are a reasonable way of iterating over a range of numbers:
 
     for (var x = 0; x < upperBound; x++) {
         // do something
