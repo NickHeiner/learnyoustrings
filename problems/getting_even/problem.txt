@@ -1,0 +1,45 @@
+Previously, we printed out a single character from the string.
+Now, let's write a program that prints out every even character.
+
+Example
+    $ node your-solution.js abcde
+    // prints out 'ace'
+
+----------------------------------------------------------------------
+HINTS:
+
+To access a character of a string at an index, use the [] notation:
+
+    var index = 1;
+    'abc'[index] === 'b'
+
+For loops a reasonable way of iterating over a range of numbers:
+
+    for (var x = 0; x < upperBound; x++) {
+        // do something
+    }
+
+You can control where the loop goes next with the third part of the for loop:
+
+    for (var x = 0; x > -100; x--) {
+        // going down by one each time
+    }
+
+    for (var x = 0; x < 100; x *= 2) {
+        // doubling x each time
+    }
+
+    for (var x = 0; x < 2300; x = x * x) {
+        // squaring x each time
+    }
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+
+This problem originally comes from the learnyounode workshop.
+
+----------------------------------------------------------------------
