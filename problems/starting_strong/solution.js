@@ -1,13 +1,13 @@
 var str = process.argv[2],
-    suffix = process.argv[3],
+    prefix = process.argv[3],
 
-    isSuffix = true;
+    isPrefix = true;
 
-for (var index = 0; index < suffix.length; index++) {
-  if (str[index] !== suffix[index]) {
-    isSuffix = false;
+for (var index = 0; index < prefix.length; index++) {
+  if (str[index] !== prefix[index]) {
+    isPrefix = false;
     break;
   }
 }
 
-console.log(isSuffix);
+console.log(isPrefix);

@@ -1,4 +1,4 @@
 var str = process.argv[2],
-    suffix = process.argv[3];
+    potentialPrefix = process.argv[3];
 
-console.log(str.indexOf(suffix) === 0)
+console.log(str.indexOf(potentialPrefix) === 0)
