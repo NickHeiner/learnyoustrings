@@ -1,0 +1,27 @@
+Write a program that returns a count of how many times each character appears in a string.
+When you pass this challenge, bask in the glory that you could pass many technical phone screens.
+
+Example
+    $ node your-solution.js foobaaarrrr
+    // prints out '{f: 1, o: 2, b: 1, a: 3, r: 4}' (or equivalent counts; the order is not important)
+
+    $ node your-solution.js bbb
+    // prints out '{b: 3}'
+
+----------------------------------------------------------------------
+HINTS:
+
+Objects are a great way to associate keys and values.
+
+    var obj = {};
+    obj['f'] = 2;
+
+    console.log(obj) // {f: 2}
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+----------------------------------------------------------------------
