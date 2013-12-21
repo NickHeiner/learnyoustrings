@@ -1,0 +1,24 @@
+Write a program that prints the string it is given without any vowels ('aeiou').
+
+Example
+    $ node your-solution.js foobaaarrrr
+    // prints out 'fbrrrr'
+
+    $ node your-solution.js bbb
+    // prints out 'bbb'
+
+    $ node your-solution.js aaa
+    // prints out ''
+
+----------------------------------------------------------------------
+HINTS:
+
+It's ok to hardcode a list of vowels in your program.
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+----------------------------------------------------------------------

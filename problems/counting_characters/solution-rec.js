@@ -15,4 +15,4 @@ function getCharCounts(soFar, string) {
   return getCharCounts(soFar, string.slice(1));
 }
 
-console.log(getCharCounts(str));
+console.log(getCharCounts({}, str));
