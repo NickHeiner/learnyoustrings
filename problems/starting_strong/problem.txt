@@ -1,0 +1,27 @@
+Write a program that takes in two strings, and prints true if the second is a suffix for the first, and false otherwise.
+
+Example
+    $ node your-solution.js foobar foo
+    // prints out 'true'
+
+    $ node your-solution.js foobar asdf
+    // prints out 'false'
+
+----------------------------------------------------------------------
+HINTS:
+
+If you want to end a for loop early, you can use the `break` statement:
+
+    for (var x = 0; x < upperBound; x++) {
+        if (timeToBailOut(x)) {
+            break;
+        }
+    }
+
+When you are done, you must run:
+
+   {appname} verify myprogram.js
+
+to proceed. Your program will be tested, a report will be generated,
+and the lesson will be marked 'completed' if you are successful.
+----------------------------------------------------------------------
