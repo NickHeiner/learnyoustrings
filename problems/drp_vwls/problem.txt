@@ -1,14 +1,14 @@
-Write a program that prints the string it is given without any vowels ('aeiou').
+Write a function that returns the string it is given without any vowels ('aeiou').
 
 Example
-    $ node your-solution.js foobaaarrrr
-    // prints out 'fbrrrr'
+    yourSolution('foobaaarrrr')
+    // ==> 'fbrrrr'
 
-    $ node your-solution.js bbb
-    // prints out 'bbb'
+    yourSolution('bbb')
+    // ==> 'bbb'
 
-    $ node your-solution.js aaa
-    // prints out ''
+    yourSolution('aaa')
+    // ==> ''
 
 ----------------------------------------------------------------------
 HINTS:
