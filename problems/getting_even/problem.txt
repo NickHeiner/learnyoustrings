@@ -1,9 +1,9 @@
 Previously, we printed out a single character from the string.
-Now, let's write a program that prints out every even character.
+Now, let's write a function that returns every even character.
 
 Example
-    $ node your-solution.js abcde
-    // prints out 'ace'
+    $ yourSolution('abcde')
+    // ==> 'ace'
 
 ----------------------------------------------------------------------
 HINTS:

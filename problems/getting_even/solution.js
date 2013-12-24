@@ -1,8 +1,12 @@
-var str = process.argv[2],
-    result = '';
+function printEvenChars(str) {
 
-for (var index = 0; index < str.length; index += 2) {
-  result += str[index];
+  var result = '';
+
+  for (var index = 0; index < str.length; index += 2) {
+    result += str[index];
+  }
+
+  return result;
 }
 
-console.log(result);
+module.exports = printEvenChars;
