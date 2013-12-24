@@ -5,6 +5,6 @@ function rndint () {
 }
 
 module.exports = setupWrapper(__dirname, [
-  [rndint(), rndint()],
-  [rndint(), rndint(), rndint(), rndint()]
+  [[rndint(), rndint()]],
+  [[rndint(), rndint(), rndint(), rndint()]]
 ]);
