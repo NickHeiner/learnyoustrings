@@ -2,7 +2,7 @@ Previously, we printed out a single character from the string.
 Now, let's write a function that returns every even character.
 
 Example
-    $ yourSolution('abcde')
+    yourSolution('abcde')
     // ==> 'ace'
 
 ----------------------------------------------------------------------

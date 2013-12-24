@@ -2,10 +2,10 @@ Write a function that reverses a string.
 When you pass this challenge, bask in the glory that you could pass many technical phone screens.
 
 Example
-    $ yourSolution('foobar')
+    yourSolution('foobar')
     // ==> 'raboof'
 
-    $ yourSolution('bbb')
+    yourSolution('bbb')
     // ==> 'bbb'
 
 ----------------------------------------------------------------------

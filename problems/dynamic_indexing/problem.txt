@@ -5,7 +5,7 @@ Don't worry about handling invalid inputs where the index is not a valid index
 into the string (eg < 0 or > string length).
 
 Example
-    $ yourSolution('abc', 1)
+    yourSolution('abc', 1)
     // ==> 'b'
 
 ----------------------------------------------------------------------

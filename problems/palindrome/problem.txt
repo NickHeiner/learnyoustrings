@@ -1,16 +1,16 @@
 Write a function that returns true if a string is a palindrome, and false otherwise.
 
 Example
-    $ yourSolution('foobar')
+    yourSolution('foobar')
     // ==> false
 
-    $ yourSolution('bbb')
+    yourSolution('bbb')
     // ==> true
 
-    $ yourSolution('abba')
+    yourSolution('abba')
     // ==> true
 
-    $ yourSolution('amanaplanacanalpanama')
+    yourSolution('amanaplanacanalpanama')
     // ==> true
 
 ----------------------------------------------------------------------
