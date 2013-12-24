@@ -1,7 +1,11 @@
-var result = 0
+module.exports = function(nums) {
 
-for (var i = 2; i < process.argv.length; i++) {
-  result += Number(process.argv[i])
-}
+  var result = 0;
 
-console.log(result)
+  for (var i = 0; i < nums.length; i++) {
+    result += nums[i];
+  }
+
+  return result;
+};
+
