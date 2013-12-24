@@ -1,8 +1,4 @@
-var getRandomString = require('../../helpers/get-random-string');
+var getRandomString = require('../../helpers/get-random-string'),
+    setupWrapper = require('../../helpers/setup-wrapper');
 
-module.exports = function () {
-  return {
-    args: [getRandomString()],
-    stdin: null
-  }
-}
+module.exports = setupWrapper(__dirname, [[getRandomString()], [getRandomString()]]);
