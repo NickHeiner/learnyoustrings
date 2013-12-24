@@ -1,6 +1,8 @@
-var str = process.argv[2],
-    suffix = process.argv[3],
+function isSuffix(str, suffix) {
 
-    strIndexOfSuffix = str.indexOf(suffix);
+  var strIndexOfSuffix = str.indexOf(suffix);
 
-console.log(strIndexOfSuffix === str.length - suffix.length && strIndexOfSuffix !== -1);
+  return strIndexOfSuffix === str.length - suffix.length && strIndexOfSuffix !== -1;
+}
+
+module.exports = isSuffix;

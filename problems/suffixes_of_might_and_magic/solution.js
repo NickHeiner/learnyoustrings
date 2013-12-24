@@ -1,16 +1,18 @@
-var str = process.argv[2],
-    suffix = process.argv[3],
+function checkSuffix(str, suffix) {
 
-    isSuffix = true;
+  var isSuffix = true;
 
-for (var index = 0; index < suffix.length; index++) {
-  var strIndexToCheck = str.length - 1 - index,
-      suffixIndexToCheck = suffix.length - 1 - index;
+  for (var index = 0; index < suffix.length; index++) {
+    var strIndexToCheck = str.length - 1 - index,
+        suffixIndexToCheck = suffix.length - 1 - index;
 
-  if (str[strIndexToCheck] !== suffix[suffixIndexToCheck]) {
-    isSuffix = false;
-    break;
+    if (str[strIndexToCheck] !== suffix[suffixIndexToCheck]) {
+      isSuffix = false;
+      break;
+    }
   }
+
+  return isSuffix;
 }
 
-console.log(isSuffix);
+module.exports = checkSuffix;

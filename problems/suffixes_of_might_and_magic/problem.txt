@@ -1,21 +1,20 @@
-Previously, we checked for a prefix.
-Now, we will do the same thing, but we're checking for a suffix.
+Previously, we checked for a prefix. Now, we will do the same thing, but we're checking for a suffix.
 
-Write a program that takes in two strings, and prints true if the second is a suffix for the first, and false otherwise.
+Write a function that takes in two strings, and returns true if the second is a suffix for the first, and false otherwise.
 
 Example
-    $ node your-solution.js foobar bar
-    // prints out 'true'
+    yourSolution('foobar', 'bar')
+    // ==> 'true'
 
-    $ node your-solution.js foobar asdf
-    // prints out 'false'
+    yourSolution('foobar', 'asdf')
+    // ==> 'false'
 
 ----------------------------------------------------------------------
 HINTS:
 
 If you want to end a for loop early, you can use the `break` statement:
 
-    for (var x = 0; x < upperBound; x++) {
+    for (var x = '0; x < upperBound; x++) {
         if (timeToBailOut(x)) {
             break;
         }
