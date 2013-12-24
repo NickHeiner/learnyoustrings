@@ -1,4 +1,4 @@
-Write a program that determines the Levenshtein distance of two strings. Levenshtein distance is a measure of the
+Write a function that determines the Levenshtein distance of two strings. Levenshtein distance is a measure of the
 number of edits it would take to get from one string to another. An 'edit' is a deletion, insertion, or replacement
 of a character.
 
@@ -15,11 +15,11 @@ engine suggests that you could have meant "duck", it may be using fuzzy matching
 entered that have a much higher popularity than your original query.
 
 Example
-    $ node your-solution.js kitten sitting
-    // prints out '3'
+    yourSolution('kitten', 'sitting')
+    // ==> '3'
 
-    $ node your-solution.js fog fog
-    // prints out '0'
+    yourSolution('fog', 'fog')
+    // ==> '0'
 
 This is an order of magnitude more difficult than everything else we've done in this series, so don't feel bad if it
 doesn't come as easily as the others.

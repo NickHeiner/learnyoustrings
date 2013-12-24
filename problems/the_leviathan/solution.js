@@ -1,6 +1,3 @@
-var strA = process.argv[2],
-    strB = process.argv[3];
-
 // from https://github.com/epeli/underscore.string/blob/6778befeabde4207186b81c50af82444930d9ab0/lib/underscore.string.js#L607
 function levenshtein(str1, str2) {
   if (str1 == null && str2 == null) return 0;
@@ -28,4 +25,4 @@ function levenshtein(str1, str2) {
   return current.pop();
 }
 
-console.log(levenshtein(strA, strB));
+module.exports = levenshtein;
