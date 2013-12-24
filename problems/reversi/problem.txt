@@ -1,12 +1,12 @@
-Write a program that reverses a string.
+Write a function that reverses a string.
 When you pass this challenge, bask in the glory that you could pass many technical phone screens.
 
 Example
-    $ node your-solution.js foobar
-    // prints out 'raboof'
+    $ yourSolution('foobar')
+    // ==> 'raboof'
 
-    $ node your-solution.js bbb
-    // prints out 'bbb'
+    $ yourSolution('bbb')
+    // ==> 'bbb'
 
 ----------------------------------------------------------------------
 HINTS:
@@ -17,7 +17,7 @@ Strings are immutable.
     str[0] = 'z'; // str === 'asdf'
                   // because strings are immutable, any assignment into them is ignored.
 
-String.slice is a nice method for cutting up strings:
+String.slice is a nice method for getting new strings that are subsets of previous strings:
 
     'abcd'.slice(1) === 'bcd'
     'abcd'.slice(2) === 'cd'

@@ -1,10 +1,14 @@
-var str = process.argv[2],
-    result = '';
+function reverseString(str) {
 
-for (var index = 0; index < str.length; index++) {
-  var indexFromEnd = str.length - 1 - index;
+  var result = '';
 
-  result += str[indexFromEnd];
+  for (var index = 0; index < str.length; index++) {
+    var indexFromEnd = str.length - 1 - index;
+
+    result += str[indexFromEnd];
+  }
+
+  return result;
 }
 
-console.log(result);
+module.exports = reverseString;
