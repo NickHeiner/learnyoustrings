@@ -1,11 +1,11 @@
-Write a program that takes in two strings, and prints true if the second is a suffix for the first, and false otherwise.
+Write a function that takes in two strings, and returns true if the second is a suffix for the first, and false otherwise.
 
 Example
-    $ node your-solution.js foobar foo
-    // prints out 'true'
+    $ yourSolution('foobar', 'foo')
+    // ==> 'true'
 
-    $ node your-solution.js foobar asdf
-    // prints out 'false'
+    $ yourSolution('foobar', 'asdf')
+    // ==> 'false'
 
 ----------------------------------------------------------------------
 HINTS:

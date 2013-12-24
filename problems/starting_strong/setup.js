@@ -1,12 +1,6 @@
-var getRandomString = require('../../helpers/get-random-string');
+var getRandomString = require('../../helpers/get-random-string'),
+    setupWrapper = require('../../helpers/setup-wrapper'),
 
-module.exports = function () {
+    str = getRandomString();
 
-  var str = getRandomString(),
-      args = [str, str.substring(0, 3)];
-
-  return {
-    args: args,
-    stdin: null
-  }
-}
+module.exports = setupWrapper(__dirname, [[str, str.substring(0, 3)], ['asdf', 'not-a-prefix']]);

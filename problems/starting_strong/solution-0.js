@@ -1,4 +1,5 @@
-var str = process.argv[2],
-    potentialPrefix = process.argv[3];
+function checkPrefix(str, potentialPrefix) {
+  return str.indexOf(potentialPrefix) === 0;
+}
 
-console.log(str.indexOf(potentialPrefix) === 0)
+module.exports = checkPrefix;
