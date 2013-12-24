@@ -9,21 +9,21 @@ function setupWrapper(solutionDir, argLists) {
         solution = require(path.resolve(solutionDir, 'solution')),
         submission = require(path.resolve(process.cwd(), file)),
 
-        streamA = new Readable(),
-        streamB = new Readable();
+        streamB = new Readable(),
+        streamA = new Readable();
 
     argLists.forEach(function (args, index) {
-      streamA.push(JSON.stringify(solution.apply(null, args)));
-      streamB.push(JSON.stringify(submission.apply(null, args)));
+      streamB.push(JSON.stringify(solution.apply(null, args)));
+      streamA.push(JSON.stringify(submission.apply(null, args)));
 
       if (index !== argLists.length - 1) {
-        streamA.push('\n');
         streamB.push('\n');
+        streamA.push('\n');
       }
     });
 
-    streamA.push(null);
     streamB.push(null);
+    streamA.push(null);
 
     return {
       a: streamA,
