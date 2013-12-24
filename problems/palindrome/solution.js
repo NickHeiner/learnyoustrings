@@ -1,13 +1,17 @@
-var str = process.argv[2],
-    isPalindrome = true;
+function isPalindrome(str) {
 
-for (var index = 0; index < str.length; index++) {
-  var indexFromEnd = str.length - 1 - index;
+  var isPalindrome = true;
 
-  if (str[index] !== str[indexFromEnd]) {
-    isPalindrome = false;
-    break;
-  };
+  for (var index = 0; index < str.length; index++) {
+    var indexFromEnd = str.length - 1 - index;
+
+    if (str[index] !== str[indexFromEnd]) {
+      isPalindrome = false;
+      break;
+    }
+  }
+
+  return isPalindrome;
 }
 
-console.log(isPalindrome);
+module.exports = isPalindrome;

@@ -1,9 +1,3 @@
-module.exports = function () {
+var setupWrapper = require('../../helpers/setup-wrapper');
 
-  var args = ['asdfasd'];
-
-  return {
-    args: args,
-    stdin: null
-  }
-}
+module.exports = setupWrapper(__dirname, [['not-a-palindrome'], ['ofo'], ['madamimadam']]);

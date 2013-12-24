@@ -1,17 +1,17 @@
-Write a program that returns true if a string is a palindrome, and false otherwise.
+Write a function that returns true if a string is a palindrome, and false otherwise.
 
 Example
-    $ node your-solution.js foobar
-    // prints out 'false'
+    $ yourSolution('foobar')
+    // ==> false
 
-    $ node your-solution.js bbb
-    // prints out 'true'
+    $ yourSolution('bbb')
+    // ==> true
 
-    $ node your-solution.js abba
-    // prints out 'true'
+    $ yourSolution('abba')
+    // ==> true
 
-    $ node your-solution.js amanaplanacanalpanama
-    // prints out 'true'
+    $ yourSolution('amanaplanacanalpanama')
+    // ==> true
 
 ----------------------------------------------------------------------
 HINTS:
