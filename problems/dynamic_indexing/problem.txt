@@ -1,20 +1,22 @@
 That was good. Now we want to get a bit more flexible.
 Instead of always dumping out the first character of the string,
-take two arguments in process.argv: the string and the index to print out.
+take two arguments in your function: the string and the index of the character to return.
 Don't worry about handling invalid inputs where the index is not a valid index
 into the string (eg < 0 or > string length).
 
 Example
-    $ node your-solution.js abc 1
-    // prints out 'b'
+    $ yourSolution('abc', 1)
+    // ==> 'b'
 
 ----------------------------------------------------------------------
 HINTS:
 
 To access a character of a string at an index, use the [] notation:
 
-    var index = 1;
-    'abc'[index] === 'b'
+    var index = 1,
+        str = 'abc';
+
+    str[index] === 'b'
 
 When you are done, you must run:
 

@@ -1,4 +1,5 @@
-var str = process.argv[2],
-    index = process.argv[3];
+function dynamicIndex(str, index) {
+  return str[index];
+}
 
-console.log(str[index]);
+module.exports = dynamicIndex;
