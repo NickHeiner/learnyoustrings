@@ -2,36 +2,20 @@ Previously, we found every other character of a string, but we were hardcoded to
 Now, let's make that dynamic, and be able to jump along by any size step.
 
 Example
-    $ node your-solution.js abcde 1
-    // prints out 'abcde'
+    yourSolution('abcde', 1)
+    // ==> 'abcde'
 
-    $ node your-solution.js abcde 2
-    // prints out 'ace'
+    yourSolution('abcde', 2)
+    // ==> 'ace'
 
-    $ node your-solution.js abcde 3
-    // prints out 'ad'
+    yourSolution('abcde', 3)
+    // ==> 'ad'
 
-    $ node your-solution.js abcdabcdabcd 4
-    // prints out 'aaaa'
+    yourSolution('abcdabcdabcd', 4)
+    // ==> 'aaaa'
 
 ----------------------------------------------------------------------
 HINTS:
-
-process.argv is an array of strings. If you have a string that represents a number
-and you'd like to use it as such, use the Number() function:
-
-    // assuming that process.argv = ['node', 'your-solution.js', 'abcd', '3']
-
-    // danger!
-    var num = process.argv[3];
-    var sum = num + 5; // === '35', which I'm guessing is not what you want.
-                       // this happens because instead of coercing '3' into a number,
-                       // js converts 5 into a string. It then proceeds with string concatenation,
-                       // so '3' + '5' === '35', just like 'a' + 'b' === 'ab'
-
-    // better!
-    var num = Number(process.argv[3]);
-    var sum = num + 5; // === '8'
 
 To access a character of a string at an index, use the [] notation:
 

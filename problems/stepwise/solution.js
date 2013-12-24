@@ -1,9 +1,12 @@
-var str = process.argv[2],
-    stepSize = Number(process.argv[3]),
-    result = '';
+function stepwise(str, stepSize) {
 
-for (var index = 0; index < str.length; index += stepSize) {
-  result += str[index];
+  var result = '';
+
+  for (var index = 0; index < str.length; index += stepSize) {
+    result += str[index];
+  }
+
+  return result;
 }
 
-console.log(result);
+module.exports = stepwise;
