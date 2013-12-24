@@ -12,12 +12,14 @@ function setupWrapper(solutionDir, argLists) {
         streamA = new Readable(),
         streamB = new Readable();
 
-    argLists.forEach(function (args) {
+    argLists.forEach(function (args, index) {
       streamA.push(JSON.stringify(solution(args)));
-      streamA.push('\n');
-
       streamB.push(JSON.stringify(submission(args)));
-      streamB.push('\n');
+
+      if (index !== argLists.length - 1) {
+        streamA.push('\n');
+        streamB.push('\n');
+      }
     });
 
     streamA.push(null);

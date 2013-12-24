@@ -1,18 +1,26 @@
-Write a program that prints the text "HELLO WORLD" to the console
-(stdout).
+Write a function returns the text "HELLO WORLD".
 
 ----------------------------------------------------------------------
 HINTS:
 
 To make Node.js program, create a new file with a `.js` extension and
-start writing JavaScript! Execute your program by running it with the
-`node` command. e.g.:
+start writing JavaScript!
 
-  $ node myprogram.js
+To export a function from a node program, use `module.exports`:
 
-You can write to the console in the same way as in the browser:
-  
-  console.log("text")
+    function myFirstFn(foo) {
+        return 'bar';
+    }
+
+    module.exports = myFirstFn;
+
+To play around with this program, use the node repl:
+
+    $ node
+    > var myFirstFn = require('./my-first-node-program.js')
+    undefined
+    > myFirstFn('asdf')
+    'bar'
 
 When you are done, you must run:
 

@@ -1,3 +1,1 @@
-module.exports = function () {
-  return { args: [], stdin: null }
-}
+module.exports = require('../../helpers/setup-wrapper')(__dirname, [[]]);
